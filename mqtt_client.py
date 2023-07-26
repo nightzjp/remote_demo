@@ -108,8 +108,8 @@ pub.connect_mqtt()
 with open("cat.jpg", "rb") as f:
     image = base64.b64encode(f.read()).decode()
 
-gps_topic = "$share/abc/$backendCsia/A0001/coordinate"
-illegal_topic = "$share/abc/$backendCsia/A0001/vehicleRecord"
+gps_topic = "$backendCsia/A0001/coordinate"
+illegal_topic = "$backendCsia/A0001/vehicleRecord"
 
 gps_payload = {
         "deviceNumber": "A0001",
