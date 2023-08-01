@@ -4,10 +4,10 @@ import time
 import stomp
 from stomp.exception import ConnectFailedException
 
-topic_name = "topic/SampleTopic"
-topic_gps = "HIATMP.HISENSE.GPS"  # GPS
-topic_pass = "HIATMP.HISENSE.PASS.PASSINF"  # 微卡口
-topic_illegal = "HIATMP.HISENSE.ILLEGAL"  # 违章
+topic_name = "/topic/SampleTopic"
+topic_gps = "/topic/HIATMP.HISENSE.GPS"  # GPS
+topic_pass = "/topic/HIATMP.HISENSE.PASS.PASSINF"  # 微卡口
+topic_illegal = "/topic/HIATMP.HISENSE.ILLEGAL"  # 违章
 host = "192.168.2.44"
 port = 61613
 listener_name = "listener_name"
